@@ -1,0 +1,26 @@
+body{
+    background-image: url('/static/bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container{
+    margin-top: 4%;
+}
+.card{
+    border-radius: 25px;
+    margin-left: 20%;
+
+}
+.card-body{
+    background-color: lightcyan;
+}
+#run4{
+    margin-top: 8%;
+    margin-bottom: 10px;
+    margin-left: 17%;
+}
+.collapse{
+    margin-left: 77%;
+}

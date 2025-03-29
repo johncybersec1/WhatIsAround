@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Login - WhatIsAround{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/static/login.css">
+{% endblock %}
+
+{% block content %}
+    <div class="login-container">
+        <h3 class="text-center mb-4">Login</h3>
+        <div>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <p class="{{ category }}">{{ message }}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+    
+        </div>
+        <form method="POST">
+            <div class="mb-3">
+                <label for="inputEmail3" class="form-label">Username</label>
+                <input type="text" name="username" class="form-control" id="inputEmail3" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="inputPassword3" class="form-label">Password</label>
+                <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Enter your password">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+{% endblock %}

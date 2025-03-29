@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Home- WhatIsAround{% endblock %}
+
+{% block content %}
+  <div class="container d-flex justify-content-center mt-5">
+    <div class="card text-center" style="max-width: 710px; width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">Welcome to <b>WhatIsAround!</b></h5>
+          <p class="card-text">Visit the about page if this is your first time here, and learn more about us.</p>
+          <p class="card-text">Sign up for a new account</p>
+          <a href="{{ url_for('register') }}" class="btn btn-primary">Signup</a>
+        </div>
+    </div>
+  </div>
+{% endblock %}

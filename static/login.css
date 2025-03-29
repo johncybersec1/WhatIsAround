@@ -1,0 +1,49 @@
+body{
+    background-image: url('/static/bg.jpg');
+    background-size: 2500px;
+    background-repeat: no-repeat;
+}
+.login-container{
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form-control {
+    border-radius: 8px;
+}
+.btn-primary {
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.form-check-label {
+    font-size: 0.9rem;
+}
+.signup-container {
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form-control, .form-select {
+    border-radius: 8px;
+}
+.btn-primary {
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.form-check-label {
+    font-size: 0.9rem;
+}
